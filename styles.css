@@ -1,0 +1,43 @@
+
+
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
+  font-size: 15px;
+  background-color:black;
+}
+
+h1 {
+
+  text-align: center;
+  text-transform: uppercase;
+  color: yellow;
+  font-size: 50px;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  display:inline;
+}
+
+img {
+  height: 350px;
+  width:250px;
+  overflow:hidden;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.main-nav {
+  display:flex;
+  flex-direction: row;
+  padding: 10px;
+  text-align: center;
+  margin:20px;
+  width: 1130px;
+  margin:0 auto;
+}

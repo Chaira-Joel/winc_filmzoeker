@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmzoeker</title>
+    <script defer src="moviedatabase.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <header><h1>Welkom bij de Winc filmzoeker</h1></header>
+  <body>
+    <!-- Navigatiebalk -->
+    <nav class="main-nav">
+      <!-- 5 radiobuttons voor de filters -->
+      <input type="radio" id="newfilms" name="film-filter" value="newfilms" />
+      <label for="newfilms"
+        >Nieuwste films van de laatste jaren, 2014 of nieuwer</label
+      >
+      <input type="radio" id="avengers" name="film-filter" value="avengers" />
+      <label for="avengers">Films met Avengers in de titel</label>
+
+      <input type="radio" id="xmen" name="film-filter" value="xmen" checked />
+      <label for="xmen">Films met X-men in de titel</label>
+
+      <input type="radio" id="princess" name="film-filter" value="princess" />
+      <label for="princess">Films met Princess in de titel </label>
+
+      <input type="radio" id="batman" name="film-filter" value="batman" />
+      <label for="batman">Films met Batman in de titel</label>
+    </nav>
+
+    <!-- container met de films erin -->
+    <main>
+      <!--lijst met de films -->
+      <ul id="movie-list"></ul>
+    </main>
+  </body>
+</html>
