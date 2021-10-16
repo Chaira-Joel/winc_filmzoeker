@@ -3,12 +3,12 @@ function addMoviesToDom(movies) {
     const movieList = document.getElementById("movie-list");
 
     const listItems = movies.map((movie) => {
-        let listItem = document.createElement("li");
+        const listItem = document.createElement("li");
         
-        let newImage = document.createElement("img");
+        const newImage = document.createElement("img");
         newImage.src = movie.Poster;
 
-        let link = document.createElement("a");
+        const link = document.createElement("a");
         link.href = "https://imdb.com/title/" + movie.imdbID;
         link.target = "_blank";
 
@@ -18,7 +18,7 @@ function addMoviesToDom(movies) {
         return listItem;
 
     });
-// forEach method om de li aan de UL te plakken
+
   listItems.forEach(listItem => {
     movieList.appendChild(listItem);
 });
@@ -30,9 +30,8 @@ addMoviesToDom(movies);
 function removeMoviesFromDOM(){
     const currentMovies = document.getElementById("movie-list");
 
-    while (currentMovies.hasChildNodes()) {
-        currentMovies.removeChild(currentMovies.firstChild);
-    };
+    currentMovies.innerHTML = '';
+
 }
 
 //FUNCTIE ADD EVENT LISTENERS
